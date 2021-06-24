@@ -1,13 +1,13 @@
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Employee {
 	private int empId;
 	private int projectId;
-	private Date dateFrom;
-	private Date dateTo;
+	private LocalDate dateFrom;
+	private LocalDate dateTo;
 	private Long workDaysInProject;
 
-	public Employee(int empId, int projectId, Date dateFrom, Date dateTo) {
+	public Employee(int empId, int projectId, LocalDate dateFrom, LocalDate dateTo) {
 		super();
 		this.empId = empId;
 		this.projectId = projectId;
@@ -31,19 +31,19 @@ public class Employee {
 		this.projectId = projectId;
 	}
 
-	public Date getDateFrom() {
+	public LocalDate getDateFrom() {
 		return dateFrom;
 	}
 
-	public void setDateFrom(Date dateFrom) {
+	public void setDateFrom(LocalDate dateFrom) {
 		this.dateFrom = dateFrom;
 	}
 
-	public Date getDateTo() {
+	public LocalDate getDateTo() {
 		return dateTo;
 	}
 
-	public void setDateTo(Date dateTo) {
+	public void setDateTo(LocalDate dateTo) {
 		this.dateTo = dateTo;
 	}
 
